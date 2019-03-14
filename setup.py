@@ -20,8 +20,7 @@ URL = 'https://github.com/iandanforth/isomorphic-notebook'
 EMAIL = 'iandanforth@gmail.com'
 AUTHOR = 'Ian Danforth'
 REQUIRES_PYTHON = '>=3.6.0'
-VERSION = 0.0.1
-
+VERSION = None
 # What packages are required for this module to be executed?
 REQUIRED = [
     'plotly',  # Not really, but it's a good test
