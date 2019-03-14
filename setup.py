@@ -14,7 +14,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'mypackage'
+NAME = 'isomorphic'
 DESCRIPTION = 'A sample main.ipynb that works locally and in Google colab'
 URL = 'https://github.com/iandanforth/isomorphic-notebook'
 EMAIL = 'iandanforth@gmail.com'
