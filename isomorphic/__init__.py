@@ -2,9 +2,7 @@ import plotly.graph_objs as go
 from plotly.offline import init_notebook_mode, iplot as plot
 
 def run(in_colab):
-    env_string = "local"
-    if in_colab:
-        env_string = "Google colab"
+    env_string = "Google colab" if in_colab else "local Jupyter"
     print("You're up and running in a {} environment!".format(env_string))
 
     # Plotly demo
@@ -22,12 +20,12 @@ def run(in_colab):
     check_trace = go.Scatter(
         x = [1.3, 2, 3.5],
         y = [5, 1, 10],
-        name = 'Goodness',
         mode="lines",
         line = dict(
             color = ('rgb(65, 168, 52)'),
-            width = 8,)
+            width = 12,
         )
+    )
 
     fig = go.Figure(data=[check_trace], layout=layout)
     plot(fig)
